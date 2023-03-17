@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cachulo</title>
+        <style>
+            .TituloCentrado{
+                display: flex;
+            }
+
+            .Espacio{
+                padding-left: 30px;
+            }
+            header {
+                position: fixed;
+                top: 0;
+                right: 1%;
+                width: 100%;
+                z-index: 1;
+            }
+    
+            body {
+                padding-top: 80px;
+                margin-left: 1%;
+                margin-right: 1%;
+            }
+            .Indice {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .Indice li {
+                margin: 10px 0;
+                padding: 0;
+            }
+            footer{
+                text-align: center;
+            }
+        </style>
+        <script>
+            function goBack() {
+            window.history.back();
+            }
+        </script>
+    </head>
+<body>
+    <div>
+        <header>
+            <nav>
+                <div style="text-align:right">
+                    <ul class="Indice">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../gatos/index.html">Gatos</a></li>
+                        <li><a href="../perros/index.html">Perros</a></li>
+                        <li><a href="#" onclick="goBack()">Volver atrás</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="TituloCentrado">
+            <img src="./img_perros/cachulo.jpg" height = "250" width = "260" alt="cachulo"/>
+            <p class="Espacio">Nombre: Cachulo.<br>Edad: 4 años. <br>Genero: Macho. <br>Esterilizado: Si. <br>N° de Chip: 3333333333</p>
+        </div>
+
+        <footer>
+            <div>
+                <p>@Derechos reservados - Ayuda a un peludo</p>
+                <p>Desarrollado por Hurub”</p>
+            </div>
+        </footer>
+</div>
+
+</body>
+
+</html> 

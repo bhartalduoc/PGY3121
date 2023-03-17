@@ -1,60 +1,128 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Gatitos a Elegir</title>
-        <style>
-            .TituloCentrado{
-                display: flex;
-            }
+<head>
+<meta charset="utf-8">
+    <title>
+        ayudaPeludo
+    </title>
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            right: 1%;
+            width: 100%;
+            z-index: 1;
+        }
 
-            .Espacio{
-                padding-left: 30px;
-            }
-        </style>
-    </head>
-<body>
-    ><div>
+        body {
+            padding-top: 80px;
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+
+        .TituloCentrado{
+            display: flex;
+            padding-left: 25%;
+        }
+
+        .TxtCentrado{
+            text-align: center;
+        }
+
+        .Espacio{
+            padding-left: 50px;
+        }
+
+        .ListaIntegrantes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0 auto;
+            width: fit-content;
+        }
+        .ListaIntegrantes li {
+            text-align: left;
+            margin: 10px 0;
+            padding: 0;
+            list-style: disc;
+        }
+
+        .Indice {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .Indice li {
+            margin: 10px 0;
+            padding: 0;
+        }
+        footer{
+            text-align: center;
+        }
+
+    </style>
+</head>
+    <body>
         <header>
             <nav>
-                <ul>
-                    <li><a href="#">Pagina de Inicio</a></li>
-
-                </ul>
+                <div style="text-align:right">
+                    <ul class="Indice">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./gatos/index.html">Gatos</a></li>
+                        <li><a href="./perros/index.html">Perros</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
-        <div>
-            <p>Ac&aacute tenemos 3 lindos gatitos para adoptar. pincha el nombre y sabr&aacute sus caracter&iacutesticas:</p>
-        </di>
+        <nav>
+            <br>
+            <h1 class="TxtCentrado">
+                ONG - AYUDA A UN PELUDO
+            </h1>
+            <br>
+            <blockquote class="TxtCentrado">
+                Somos una asociación sin fines de lucro, cuya finalidad es la de ayudar a animales en situación grave de maltrato y/o abandono. <br>
+                Nos preocupamos por los animales desamparados y procuramos, en la medida de nuestras posibilidades, <br>
+                buscarles un hogar temporal o permanente donde puedan ofrecerles atenciones y cariño.
+            </blockquote>
 
-        <div class="TituloCentrado">
-            <img src="gatos/gato1.jpg" height = "250" width = "260"alt="Gato sergio"/>
-            <h3 class="Espacio"><li><a href="SERGIO">SERGIO</a></li></h3>
-        </div>
-        <div>
-            <p> </p>
-        </div>
+            <br>
 
-        <div class="TituloCentrado">
-            <img src="gatos/gato2.jpeg" height = "250" width = "260" alt="Gato negris"/>
-            <h3 class="Espacio"><li><a href="NEGRIS">NEGRIS</a></li></h3>
-        </div>
-        <div>
-            <p> </p>
-        </div>
-
-        <div class="TituloCentrado">
-            <img src="gatos/gato3.jpg" height = "250" width = "260" alt="Gata luna"/>
-            <h3 class="Espacio"><li><a href="LUNA">LUNA</a></li></h3>
-        </div>
-
-        <footer>
             <div>
-                <p> @derechos reservados - JuUrrutia</p>
+                <h2 class="TxtCentrado">
+                    Nuestros Integrantes:
+                </h2>
+                <ul class="ListaIntegrantes">
+                    <li>Juan Urrutia - Frontend Dev</li>
+                    <li>Jose Ubilla - Responsable de Compliance</li>
+                    <li>Bastian Hartal - Backend Dev</li>
+                </ul>
             </div>
-        </footer>
-</div>
 
-</body>
-
+            <h2 class="TxtCentrado">
+                Nuestras Secciones de Ayuda :
+            </h2>
+                <br>
+                <div class="TituloCentrado">
+                    <img src="./img_root/adop_gato.jpeg" height = "250" width = "300"alt="adop_gato"/>
+                    <h3 class="Espacio"><li><a href="./gatos/index.html">Gatos</a></li></h3>
+                </div>
+                <div>
+                    <p> </p>
+                </div>
+        
+                <div class="TituloCentrado">
+                    <img src="./img_root/adop_perro.jpg" height = "250" width = "300"alt="adop_perro"/>
+                    <h3 class="Espacio"><li><a href="./perros/index.html">Perros</a></li></h3>
+                </div>
+                <footer>
+                    <div>
+                        <p>@Derechos reservados - Ayuda a un peludo</p>
+                        <p>Desarrollado por Hurub”</p>
+                    </div>
+                </footer>
+        </nav>
+    </body>
 </html>
