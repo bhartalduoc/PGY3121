@@ -2,37 +2,127 @@
 <html>
 <head>
 <meta charset="utf-8">
-    <title>ayudaPeludo</title>
-    
+    <title>
+        ayudaPeludo1
+    </title>
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            right: 1%;
+            width: 100%;
+            z-index: 1;
+        }
+
+        body {
+            padding-top: 80px;
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+
+        .TituloCentrado{
+            display: flex;
+            padding-left: 25%;
+        }
+
+        .TxtCentrado{
+            text-align: center;
+        }
+
+        .Espacio{
+            padding-left: 50px;
+        }
+
+        .ListaIntegrantes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0 auto;
+            width: fit-content;
+        }
+        .ListaIntegrantes li {
+            text-align: left;
+            margin: 10px 0;
+            padding: 0;
+            list-style: disc;
+        }
+
+        .Indice {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .Indice li {
+            margin: 10px 0;
+            padding: 0;
+        }
+        footer{
+            text-align: center;
+        }
+
+    </style>
 </head>
     <body>
         <header>
             <nav>
-                <br>  
-                    <h1 style="text-align:center">ONG - AYUDA A UN PELUDO</h1>  
-                        <br> 
-                        <blockquote style="text-align:center">Somos una asociación sin fines de lucro, cuya finalidad es la de ayudar a animales en situación grave de maltrato y/o abandono. <br>
-                                                              Nos preocupamos por los animales desamparados y procuramos, en la medida de nuestras posibilidades, <br>
-                                                              buscarles un hogar temporal o permanente donde puedan ofrecerles atenciones y cariño.</blockquote>
-                <br>                                            
-                <h2 style="text-align:center">Nuestros Integrantes:</h2>
-                    <div class="centrar-listas">
-                        <ul>
-                            <li>Juan Urrutia - Director Fundacion</li>
-                            <li> Jose Ubilla - Encargado de Abastecimiento</li>
-                            <li> Bastian Hartal - Veterinario</li>
-                        </ul>
+                <div style="text-align:right">
+                    <ul class="Indice">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./gatos/index.html">Gatos</a></li>
+                        <li><a href="./perros/index.html">Perros</a></li>
+                    </ul>
                 </div>
- 
-                <h2 style="text-align:center">Nuestras Secciones de Ayuda :</h2>
-                    <br>
+            </nav>
+        </header>
+        <nav>
+            <br>
+            <h1 class="TxtCentrado">
+                ONG - AYUDA A UN PELUDO
+            </h1>
+            <br>
+            <blockquote class="TxtCentrado">
+                Somos una asociación sin fines de lucro, cuya finalidad es la de ayudar a animales en situación grave de maltrato y/o abandono. <br>
+                Nos preocupamos por los animales desamparados y procuramos, en la medida de nuestras posibilidades, <br>
+                buscarles un hogar temporal o permanente donde puedan ofrecerles atenciones y cariño.
+            </blockquote>
+
+            <br>
+
+            <div>
+                <h2 class="TxtCentrado">
+                    Nuestros Integrantes:
+                </h2>
+                <ul class="ListaIntegrantes">
+                    <li>Juan Urrutia - Frontend Dev</li>
+                    <li>Jose Ubilla - Responsable de Compliance</li>
+                    <li>Bastian Hartal - Backend Dev</li>
+                </ul>
+            </div>
+
+            <h2 class="TxtCentrado">
+                Nuestras Secciones de Ayuda :
+            </h2>
+                <br>
+                <div class="TituloCentrado">
+                    <img src="./img_root/adop_gato.jpeg" height = "250" width = "300"alt="adop_gato"/>
+                    <h3 class="Espacio"><li><a href="./gatos/index.html">Gatos</a></li></h3>
+                </div>
+                <div>
+                    <p> </p>
+                </div>
+        
+                <div class="TituloCentrado">
+                    <img src="./img_root/adop_perro.jpg" height = "250" width = "300"alt="adop_perro"/>
+                    <h3 class="Espacio"><li><a href="./perros/index.html">Perros</a></li></h3>
+                </div>
+                <footer>
                     <div>
-                        <img src="ayuda/gato1.jpg" height="250" width="260" alt="gato1"
-                    <center><a href="Gatos">Gatos </a></center> 
+                        <p>@Derechos reservados - Ayuda a un peludo</p>
+                        <p>Desarrollado por Hurub</p>
                     </div>
-                    <br>
-                    <center><a href="Perros">Perros </a></center> 
-            </nav>    
-        </header>    
-    </body>     
+                </footer>
+        </nav>
+    </body>
 </html>
