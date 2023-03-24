@@ -1,9 +1,6 @@
-body {
-  background-color: rgb(255, 255, 255);
-}
-
 .caja-index{
   position: fixed;
+  display: block;
   top: 0%;
   left: 0;
   width: 20%;
@@ -13,11 +10,20 @@ body {
 
 .caja-content{
   position: fixed;
+  display: block;
   top: 0;
   right: 0;
   width: 80%;
   height: 100%;
-  background-color: white;
+}
+
+.content-block{
+  display: block;
+  width: 100%;
+  height: 25%;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 
 .TituloCentrado{
@@ -30,6 +36,14 @@ body {
 
 .Espacio{
   padding-left: 50px;
+}
+
+.Espacio li a{
+  color: white;
+}
+
+.Espacio li a:hover{
+  color:rgba(255, 255, 255, 0.501);
 }
 
 .ListaIntegrantes {
@@ -73,5 +87,6 @@ body {
 }
 
 footer{
+  bottom: 0%;
   text-align: center;
 }
