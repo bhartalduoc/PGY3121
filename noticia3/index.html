@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caos News - Facción de la Democracia Cristiana rechazó alianza con el oficialismo y convocó a plebiscito</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Importamos los estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../custom-styles.css">
+  </head>
+  
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../logo.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../categorias.html">Categorias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../periodistas.html">Periodistas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contacto.html">Contactanos</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <form class="d-flex">
+                  <div class="input-group me-2">
+                    <input class="form-control" style="width: 326px;" type="search" placeholder="Buscar por Autor, Categoria o palabra clave" aria-label="Buscar por Autor, Categoria o palabra clave">
+                    <button class="btn btn-danger" type="submit">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                </form>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-dark me-md-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Iniciar sesión
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- Modal de inicio de sesión -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Inicio de sesión</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            
+            <div class="modal-body">
+              <form>
+                <form action="#">
+                  <div class="mb-3">
+                  <label class="form-label" for="lang">Perfil</label>
+                  <select name="lenguajes" id="lang">
+                    <option value="Administrador">Administrador</option>
+                    <option value="Periodista">Periodista</option>
+                  </select>
+                </div>
+            </form>
+
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo electrónico</label>
+                  <input type="plain" class="form-control" id="email" required>
+                </div>
+                                
+                <div class="mb-3">
+                  <label for="password" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="password" required>
+                </div>
+              </form>
+            </div>
+            
+            <div class="modal-footer">
+              <a href="admin.html" class="btn btn-dark" role="button">Entrar</a>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!-- Imagen Principal -->
+    <div class="container-fluid p-4">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./noticia3_dc.jpg" class="d-block w-100" alt="Imagen 1">
+            <div class="carousel-caption">
+              <h4 class="fondo-texto">“No es nuestro Gobierno”: Facción de la Democracia Cristiana rechazó alianza con el oficialismo y convocó a plebiscito</h4>
+              <br>
+              <h5 class="fondo-texto">Una facción de militantes de la Democracia Cristiana llegaron hasta la sede del partido para manifestar su rechazo a 
+                la alianza con las fuerzas políticas oficialistas y llamaron a un plebiscito para consultar a las bases el próximo 28 de mayo.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contenido principal -->
+    <div class="container mt-5" style="height: 80vh;">
+      <h1>“No es nuestro Gobierno”: Facción de la Democracia Cristiana rechazó alianza con el oficialismo y convocó a plebiscito</h1>
+      <p><i class="fas fa-tags"></i>Politica</p>
+      <p>Autor: Bastian Hartal</p>
+      <p class="cuerpo-noticia">
+        Una facción de militantes de la Democracia Cristiana llegaron hasta la sede del partido para manifestar su rechazo a 
+        la alianza con las fuerzas políticas oficialistas y llamaron a un plebiscito para consultar a las bases el próximo 28 de mayo.
+      </p>
+      <p class="cuerpo-noticia">
+        Este viernes, dirigentes de la Democracia Cristiana llegaron hasta la sede del partido para rechazar la idea de unir alianzas con los partidos oficialistas.
+        El exvicepresidente de la DC, Rodrigo Albornoz, remarcó que no deben incorporarse a un Gobierno del que no forman parte. “No nos representa, es un proyecto político 
+        distinto” a lo que aspira la DC y la ciudadanía, explicó. Además, el sector contrario a unirse al Gobierno planteó la idea realizar un plebiscito interno el próximo 
+        28 de mayo para consultar a las bases del partido.
+      </p>
+
+      <img src="./DC.jpg" class="d-block w-100" alt="Imagen 2">
+      <p class="cuerpo-noticia"> </p>
+      <h4>La propuesta de Undurraga</h4>
+      <p class="cuerpo-noticia">
+        El presidente de la Democracia Cristiana, Alberto Undurraga, propuso un pacto entre la colectividad, el oficialismo y la centro izquierda para las elecciones municipales 
+        de 2024, tras la irrumpción del Partido Republicano en las elecciones de consejeros constitucionales.
+      </p>
+      <p class="cuerpo-noticia">
+        “Uno de los desafíos, no solo para la Democracia Cristiana, sino que también para la centroizquierda en general, es sentarnos a conversar para lograr un acuerdo que 
+        incorpore a todo el oficialismo y también a la Democracia Cristiana, y otras fuerzas que quieran sumarse, de cara a la próxima elección municipales”, señaló en Noticias Express de CNN Chile.
+      </p>
+        
+      <div>
+        <footer class="bg-light text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0);">
+              <p>© 2023 Copyright. Desarrolado por Hurub+.</p>
+            </div>
+        </footer>
+      </div>
+    </div>
+    
+    <!-- Importamos los scripts de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

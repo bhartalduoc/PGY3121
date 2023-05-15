@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caos News - Categorias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Importamos los estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./custom-styles.css">
+  </head>
+  
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="logo.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="categorias.html">Categorias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="periodistas.html">Periodistas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contactanos</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <form class="d-flex">
+                  <div class="input-group me-2">
+                    <input class="form-control" style="width: 326px;" type="search" placeholder="Buscar por Autor, Categoria o palabra clave" aria-label="Buscar por Autor, Categoria o palabra clave">
+                    <button class="btn btn-danger" type="submit">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                </form>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-dark me-md-2" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar sesión</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- Modal de inicio de sesión -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Inicio de sesión</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            
+            <div class="modal-body">
+              <form>
+                <form action="#">
+                  <div class="mb-3">
+                  <label class="form-label" for="lang">Perfil</label>
+                  <select name="lenguajes" id="lang">
+                    <option value="Administrador">Administrador</option>
+                    <option value="Periodista">Periodista</option>
+                  </select>
+                </div>
+            </form>
+
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo electrónico</label>
+                  <input type="plain" class="form-control" id="email" required>
+                </div>
+                                
+                <div class="mb-3">
+                  <label for="password" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="password" required>
+                </div>
+              </form>
+            </div>
+            
+            <div class="modal-footer">
+              <a href="admin.html" class="btn btn-dark" role="button">Entrar</a>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  <!-- Formulario de contacto -->
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="mb-4">Formulario de contacto</h2>
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Primer Nombre</label>
+            <input type="text" class="form-control" id="pnombre" name="pnombre" required="">
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Segundo Nombre</label>
+            <input required="" type="text" class="form-control" id="snombre" name="snombre">
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Primer Apellido</label>
+            <input required="" type="text" class="form-control" id="papellido" name="papellido">
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Segundo Apellido</label>
+            <input required="" type="text" class="form-control" id="sapellido" name="sapellido">
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" name="correo">
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <br>
+    <div>
+      <footer class="bg-light text-center text-lg-start">
+          <!-- Copyright -->
+          <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.0);">
+            <p>© 2023 Copyright. Desarrolado por Hurub+.</p>
+          </div>
+      </footer>
+    </div>
+  </div>
+  <!-- Importamos los scripts de Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

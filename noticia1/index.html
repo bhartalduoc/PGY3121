@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caos News - Boric retrocede y la extrema derecha se convierte en la primera fuerza política</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Importamos los estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../custom-styles.css">
+  </head>
+  
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../logo.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../categorias.html">Categorias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../periodistas.html">Periodistas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contacto.html">Contactanos</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <form class="d-flex">
+                  <div class="input-group me-2">
+                    <input class="form-control" style="width: 326px;" type="search" placeholder="Buscar por Autor, Categoria o palabra clave" aria-label="Buscar por Autor, Categoria o palabra clave">
+                    <button class="btn btn-danger" type="submit">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                </form>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-dark me-md-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Iniciar sesión
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+ <!-- Modal de inicio de sesión -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Inicio de sesión</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            
+            <div class="modal-body">
+              <form>
+                <form action="#">
+                  <div class="mb-3">
+                  <label class="form-label" for="lang">Perfil</label>
+                  <select name="lenguajes" id="lang">
+                    <option value="Administrador">Administrador</option>
+                    <option value="Periodista">Periodista</option>
+                  </select>
+                </div>
+            </form>
+
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo electrónico</label>
+                  <input type="plain" class="form-control" id="email" required>
+                </div>
+                                
+                <div class="mb-3">
+                  <label for="password" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="password" required>
+                </div>
+              </form>
+            </div>
+            
+            <div class="modal-footer">
+              <a href="admin.html" class="btn btn-dark" role="button">Entrar</a>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!-- Imagen Principal -->
+    <div class="container-fluid p-5">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./noticia1_republicano.jpg" class="d-block w-100" alt="Imagen 1">
+            <div class="carousel-caption">
+              <h4 class="fondo-texto">Giro en Chile: Boric retrocede y la extrema derecha se convierte en la primera fuerza política</h4>
+              <br>
+              <h5 class="fondo-texto">"Chile ha derrotado a un gobierno fracasado", dijo José Antonio Kast en un discurso lleno de referencias a la inseguridad del pais.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contenido principal -->
+    <div class="container mt-5" style="height: 80vh;">
+      <h1>Giro en Chile: Boric retrocede y la extrema derecha se convierte en la primera fuerza política </h1>
+      <p><i class="fas fa-tags"></i>Política</p>
+      <p>Autor: Juan Urrutia</p>
+      <p class="cuerpo-noticia">
+        "Chile ha derrotado a un gobierno fracasado", dijo José Antonio Kast en un discurso lleno de referencias a la inseguridad del pais.
+      </p>
+      <p class="cuerpo-noticia">
+        El Partido Republicano, la formación de extrema derecha de Chile, obtuvo el domingo un contundente triunfo en las urnas en las elecciones de los 50 consejeros constitucionales, 
+        los encargados de redactar una nueva Ley Fundamental tras el rechazo del pasado septiembre. La fuerza liderada por el excandidato presidencial José Antonio Kast, a quien derrotó 
+        el mandatario, Gabriel Boric, ha defendido la vigencia de la Constitución actual, redactada en 1980, en la dictadura de Augusto Pinochet. La nueva propuesta de texto será plebiscitada 
+        en diciembre. Los republicanos chilenos han alcanzado un 35% de los votos, con 22 escaños dentro del consejo. Es un terremoto en la política chilena, porque esta fuerza no solo 
+        se impone al oficialismo del presidente Gabriel Boric, cuya lista ha quedado en segundo lugar con el 28%. La izquierda ha logrado apenas 17 de los 50 consejeros, con lo que se 
+        quedará sin poder de veto dentro del órgano, para lo que necesitaban 21 miembros. La extrema derecha ha superado por mucho al conservadurismo histórico, que ha alcanzado un 21% 
+        y obtuvo 11 consejeros.
+      </p>
+      <p class="cuerpo-noticia">
+        “Si estos pronósticos se cumplen, paradojas de la historia, quienes se negaron por décadas a la posibilidad de un cambio constitucional y quienes representan hoy la principal 
+        amenaza para la democracia, tendrán la cancha abierta para escribir el nuevo texto sin mayores dificultades”, señalaba antes de conocer los resultados la directora ejecutiva 
+        Fundación Nodo XXI, Pierina Ferretti, ligada al Frente Amplio de Boric.
+      </p>
+      <img src="./tabla.jpg" class="d-block w-100" alt="Imagen 2">
+      <p class="cuerpo-noticia">
+        Kast habló la noche del domingo, desde la sede de su partido. “Hoy es el primer día de un mejor futuro para nuestro país”, aseguró el líder de esta formación, con vínculos con Vox. 
+        “Chile ha derrotado a un Gobierno fracasado”, añadió entre gritos de “viva Chile” y “paliza”, en alusión a la amplia ventaja sobre las otras fuerzas en competencia. El presidente Boric 
+        también se dirigió al país. En un discurso convocante, el mandatario reconoció que “el fracaso” del primer intento se debió en parte a la falta de escucha entre quienes pensaban 
+        distinto. “Quiero invitar al Partido Republicano a no cometer el error que cometimos nosotros”, añadió.
+      </p>
+      <p class="cuerpo-noticia">
+        Las dos derechas, la extrema y la tradicional —liderada por una nueva generación que se ha comprometido con una nueva Constitución— han tenido un muy buen resultado. En conjunto, 
+        este sector político alcanza 33 consejeros en el órgano que redactará la propuesta de nueva Constitución, lo que supera incluso las mejores proyecciones de las últimas semanas. Con este 
+        resultado, pueden proponer, aprobar y modificar normas constitucionales, porque sobrepasan holgadamente los tres quintos de quórum, para lo que necesitaban 30 puestos en el Consejo Constitucional.
+      </p>
+      <p class="cuerpo-noticia">
+        Pero los tres partidos tradicionales de la oposición (la UDI, Renovación Nacional y Evópoli) estarán fuertemente presionados entre dos opciones: la tentación de endurecer sus posturas y mimetizarse 
+        con el Partido Republicano de Kast, un exmilitante de la UDI, o intentar mantener su distancia táctica y negociar con los otros sectores del Consejo Constitucional. “La gran pregunta es si la 
+        dirigencia de la derecha convencional va a aguantar el tsunami. La tentación de seguir a Kast y compañía será muy grande”, explica a EL PAÍS el académico Cristóbal Rovira, experto en ultraderecha. 
+        “Todos los actores (desde los comunistas a los republicanos) han debatido sobre seguridad ciudadana día y noche, es el tema de la ultraderecha. Igual que en Europa: si todos hablan de inmigración, 
+        quien gana la batalla es quienes están contra la inmigración”, explica el líder de la investigación Apoyo y rechazo a la ultraderecha en Chile.
+      </p>
+      <p class="cuerpo-noticia">
+        En estas elecciones se han terminado por fijar, a su vez, al menos otros dos hitos de máxima relevancia. La extinción de la centroizquierda agrupada en la lista Todo por Chile 
+        (el partido PPD del presidente Ricardo Lagos y de la actual ministra del Interior, Carolina Tohá, el Partido Radical y la Democracia Cristiana, la única fuerza de las tres que no pertenece al Gobierno de Boric).
+        Este conjunto de partidos obtuvo un 9% de los respaldos, con lo que no logró ningún consejero. Es un golpe duro para este sector moderado que alguna vez conformó los gobiernos de la Concertación (1990-2010) y 
+        apostó por diferenciarse de La Moneda de Boric y de la izquierda a través de una lista separada.
+      </p>
+      <p class="cuerpo-noticia">
+        Un segundo asunto crucial: el Partido de la Gente, la fuerza populista del economista Franco Parisi, que esta misma noche ha dejado Chile rumbo a Estados Unidos, donde vive, quedó en último lugar, pese 
+        a las proyecciones que indicaban que conseguiría algunos escaños. Alcanzó el 5,4% de los respaldos, con lo que tampoco tendrá representantes dentro del Consejo Constitucional.
+        Los resultados del domingo en Chile han configurado una gran paradoja: cuando los 15,1 millones de chilenos tengan que volver a las urnas para aprobar o rechazar la nueva propuesta de Ley Fundamental en 
+        diciembre, deberán elegir entre la Constitución de Kast o la de Pinochet.
+      </p>
+        <div>
+          <footer class="bg-light text-center text-lg-start">
+              <!-- Copyright -->
+              <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0);">
+                <p>© 2023 Copyright. Desarrolado por Hurub+.</p>
+              </div>
+          </footer>
+        </div>
+    </div>
+    
+    <!-- Importamos los scripts de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
