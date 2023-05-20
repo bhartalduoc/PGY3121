@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Caos News - Facción de la Democracia Cristiana rechazó alianza con el oficialismo y convocó a plebiscito</title>
+    <title>Caos News - Boric retrocede y la extrema derecha se convierte en la primera fuerza política</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Importamos los estilos de Bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="../custom-styles.css">
+    <script src="../scripts/logindinamico.js"></script>
   </head>
   
   <body>
@@ -47,59 +48,15 @@
                 </form>
               </li>
               <li class="nav-item">
-                <button type="button" class="btn btn-dark me-md-2" data-bs-toggle="modal" data-bs-target="#loginModal">
-                  Iniciar sesión
-                </button>
+                <!-- Item de inicio de sesion -->
+                <div id="logindinamico"></div>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <div class="container">
-      <!-- Modal de inicio de sesión -->
-      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="loginModalLabel">Inicio de sesión</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </div>
-            
-            <div class="modal-body">
-              <form>
-                <form action="#">
-                  <div class="mb-3">
-                  <label class="form-label" for="lang">Perfil</label>
-                  <select name="lenguajes" id="lang">
-                    <option value="Administrador">Administrador</option>
-                    <option value="Periodista">Periodista</option>
-                  </select>
-                </div>
-            </form>
-
-            <div class="modal-body">
-              <form>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Correo electrónico</label>
-                  <input type="plain" class="form-control" id="email" required>
-                </div>
-                                
-                <div class="mb-3">
-                  <label for="password" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control" id="password" required>
-                </div>
-              </form>
-            </div>
-            
-            <div class="modal-footer">
-              <a href="admin.html" class="btn btn-dark" role="button">Entrar</a>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>  
+    <div class="container"> 
     <!-- Imagen Principal -->
     <div class="container-fluid p-4">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
