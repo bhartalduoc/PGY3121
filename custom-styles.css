@@ -15,3 +15,10 @@
     font-family: "FiraSans-Regular", Helvetica Neue, -apple-system, "system-ui", BlinkMacSystemFont, sans-serif;
 }
 
+.indicador-economico {
+    font-size: 18px;
+    margin: 10px;
+    margin-top: 5px;
+    color: #13141D;
+}
+
