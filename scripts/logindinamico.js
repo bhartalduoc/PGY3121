@@ -4,7 +4,7 @@ function incrustarLogin() {
 
   // Crea el código HTML del botón y el modal
   var codigoHTML = `
-      <button type="button" class="btn btn-dark me-md-2" data-bs-toggle="modal" data-bs-target="#modalLogin">
+      <button type="button" class="btn btn-danger me-md-2" data-bs-toggle="modal" data-bs-target="#modalLogin">
         Iniciar sesión
       </button>
       
@@ -43,7 +43,7 @@ function incrustarLogin() {
               </div>
 
               <div class="modal-footer">
-                <button type="button" class="btn btn-dark" onclick="validarInicioSesion()">Iniciar Sesión</button>
+                <button type="button" class="btn btn-danger" onclick="validarInicioSesion()">Iniciar Sesión</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
               </div>
             
