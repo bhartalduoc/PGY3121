@@ -1,0 +1,25 @@
+.fondo-texto {
+    background-color: #b1b1b1;
+    padding: 5px;
+    /* Agregamos un poco de padding para separar el texto del fondo */
+    display: inline-block;
+    color: #1b1b1b;
+}
+
+.cuerpo-noticia {
+    font-size: 18px;
+    line-height: 178%;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    color: #13141D;
+    font-family: "FiraSans-Regular", Helvetica Neue, -apple-system, "system-ui", BlinkMacSystemFont, sans-serif;
+}
+
+.indicador-economico {
+    font-size: 18px;
+    margin: 10px;
+    margin-top: 5px;
+    color: #b1b1b1;
+    font-family: "FiraSans-Regular", Helvetica Neue, -apple-system, "system-ui", BlinkMacSystemFont, sans-serif;
+}
+
