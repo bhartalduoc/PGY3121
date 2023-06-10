@@ -1,128 +1,212 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-    <title>
-        ayudaPeludo2
-    </title>
-    <style>
-        header {
-            position: fixed;
-            top: 0;
-            right: 1%;
-            width: 100%;
-            z-index: 1;
-        }
-
-        body {
-            padding-top: 80px;
-            margin-left: 1%;
-            margin-right: 1%;
-        }
-
-        .TituloCentrado{
-            display: flex;
-            padding-left: 25%;
-        }
-
-        .TxtCentrado{
-            text-align: center;
-        }
-
-        .Espacio{
-            padding-left: 50px;
-        }
-
-        .ListaIntegrantes {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-            margin: 0 auto;
-            width: fit-content;
-        }
-        .ListaIntegrantes li {
-            text-align: left;
-            margin: 10px 0;
-            padding: 0;
-            list-style: disc;
-        }
-
-        .Indice {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .Indice li {
-            margin: 10px 0;
-            padding: 0;
-        }
-        footer{
-            text-align: center;
-        }
-
-    </style>
+  <title>Caos News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Importamos los estilos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="./custom-styles.css">
+  <script src="scripts/logindinamico.js"></script>
+  <script src="scripts/indicador.js"></script>
 </head>
-    <body>
-        <header>
-            <nav>
-                <div style="text-align:right">
-                    <ul class="Indice">
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./gatos/index.html">Gatos</a></li>
-                        <li><a href="./perros/index.html">Perros</a></li>
-                    </ul>
+
+<body>
+  <!-- Barra navegadora -->
+  <header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="categorias.html">Categorias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="periodistas.html">Periodistas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="navbar-nav">
+            <li>
+              <p class="indicador-economico" id="UF"></p>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex">
+                <div class="input-group me-2">
+                  <input class="form-control" style="width: 326px;" type="search"
+                    placeholder="Buscar por Autor, Categoria o palabra clave"
+                    aria-label="Buscar por Autor, Categoria o palabra clave">
+                  <button class="btn btn-danger" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
                 </div>
-            </nav>
-        </header>
-        <nav>
-            <br>
-            <h1 class="TxtCentrado">
-                ONG - AYUDA A UN PELUDO
-            </h1>
-            <br>
-            <blockquote class="TxtCentrado">
-                Somos una asociación sin fines de lucro, cuya finalidad es la de ayudar a animales en situación grave de maltrato y/o abandono. <br>
-                Nos preocupamos por los animales desamparados y procuramos, en la medida de nuestras posibilidades, <br>
-                buscarles un hogar temporal o permanente donde puedan ofrecerles atenciones y cariño.
-            </blockquote>
-
-            <br>
-
-            <div>
-                <h2 class="TxtCentrado">
-                    Nuestros Integrantes:
-                </h2>
-                <ul class="ListaIntegrantes">
-                    <li>Juan Urrutia - Frontend Dev</li>
-                    <li>Jose Ubilla - Responsable de Compliance</li>
-                    <li>Bastian Hartal - Backend Dev</li>
-                </ul>
+              </form>
+            </li>
+            <li class="nav-item"></li>
+              <!-- Item de inicio de sesion -->
+              <div id="logindinamico"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Carrusel de imágenes -->
+    <div class="container-fluid p-4">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="noticia1/index.html">
+              <img src="./noticia1_boric.jpg" class="d-block w-100" alt="Imagen 1">
+            </a>
+            <div class="carousel-caption">
+              <h4 class="fondo-texto">Boric responde a ministra de la Corte Suprema por isapres: “Es importante que los jueces hablen a través de los fallos y no entrevistas”</h4>
+              <br>
+              <h5 class="fondo-texto">El mandatario señaló que presentarán un recurso de aclaración tras la entrevista de la ministra Ángela Vivanco que señaló que “los excedentes que las 
+                isapres tienen que devolver son a las personas que demandaron”.</h5>
             </div>
+          </div>
+          <div class="carousel-item">
+            <a href="noticia2/index.html">
+              <img src="./noticia2_colocolo.jpg" class="d-block w-100" alt="Imagen 2">
+            </a>
+            <div class="carousel-caption">
+              <h4 class="fondo-texto">Boca Juniors vs Colo Colo: Cuándo, a qué hora y dónde ver por TV y online al Cacique en Copa Libertadores</h4>
+              <br>
+              <h5 class="fondo-texto">Colo Colo visitará a Boca Juniors en un partido fundamental para su clasificación a la siguiente ronda de Copa Libertadores 2023.</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="noticia3/index.html">
+              <img src="./noticia3_toha.jpg" class="d-block w-100" alt="Imagen 3">
+            </a>
+            <div class="carousel-caption">
+              <h4 class="fondo-texto">Tohá pide aclaración a la Suprema tras dichos de Vivanco por devolución de excedentes de isapres</h4>
+              <br>
+              <h5 class="fondo-texto">La Ministra del Interior sostuvo que los dichos de la vocera de la Suprema, que solo recibirán devolución los afiliados que demandaron, 
+                no alteran el curso del proyecto que presentó La Moneda.</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="noticia4/index.html">
+              <img src="./noticia4_lagranja.jpg" class="d-block w-100" alt="Imagen 4">
+            </a>
+            <div class="carousel-caption">
+              <h4 class="fondo-texto">Persecución policial termina en choque y con un detenido en La Granja</h4>
+              <br>
+              <h5 class="fondo-texto">Una persecución policial terminó con un choque e incautación de armas en la comuna de La Granja.</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="noticia5/index.html">
+              <img src="./noticia5_dahmer.jpg" class="d-block w-100" alt="Imagen 5">
+            </a>
+            <div class="carousel-caption">
+              <h4 class="fondo-texto">Fanático de Jeffrey Dahmer mató a su sobrino de 4 años y lo ocultó en una lavadora</h4>
+              <br>
+              <h5 class="fondo-texto">Fue la propia madre del adolescente quien halló el cuerpo de la víctima e instó a su hijo a entregarse a la policía.</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="noticia6/index.html">
+              <img src="./noticia6_derrumbe.jpg" class="d-block w-100" alt="Imagen 6">
+            </a>
+            <div class="carousel-caption">
+              <h4 class="fondo-texto">12 personas murieron asfixiadas tras el colapso de una mina de oro en la Amazonía venezolana</h4>
+              <br>
+              <h5 class="fondo-texto">Las autoridades venezolanas informaron que los mineros quedaron atrapados en un derrumbe ocurrido en una mina del estado Bolívar.
+                Al menos 12 personas murieron asfixiadas debido al derrumbe de una mina en la Amazonía venezolana, al sureste del país.</h5>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </a>
+      </div>
+      <br>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./noticia7/noticia7_fauna.jpeg" class="card-img-top" alt="80">
+            <div class="card-body">
+              <h5 class="card-title">Espectaculo</h5>
+              <p class="card-text">Festival Fauna Primavera 2023: revisa las fechas, artistas confirmados y venta de entradas
+              </p>
+              <u><a href="noticia7/index.html">Leer mas... </a></u>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Última actualización hace 2 minutos</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./noticia8/noticia8_primate.jpeg" class="card-img-top" alt="80">
+            <div class="card-body">
+              <h5 class="card-title">Ciencia</h5>
+              <p class="card-text">La lectura del ADN de 233 especies de primates ilumina qué es una persona y cómo surgen las enfermedades humanas</p>
+              <u><a href="noticia8/index.html">Leer mas... </a></u>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Última actualización hace 4 minutos</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./noticia9/noticia9_vocalista.jpg" class="card-img-top" alt="80">
+            <div class="card-body">
+              <h5 class="card-title">Espectaculo</h5>
+              <p class="card-text">Muere Cristián Rodríguez, vocalista de Garras de Amor.</p>
+              <u><a href="noticia9/index.html">Leer mas... </a></u>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Última actualización hace 7 minutos</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <br>
+      <div>
+        <footer class="bg-dark text-center text-lg-start">
+          <!-- Copyright -->
+          <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0);">
+            <p style="color: rgb(138, 138, 138);">© 2023 Copyright. Desarrollado por Hurub+.</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- Importamos los scripts de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
 
-            <h2 class="TxtCentrado">
-                Nuestras Secciones de Ayuda :
-            </h2>
-                <br>
-                <div class="TituloCentrado">
-                    <img src="./img_root/adop_gato.jpeg" height = "250" width = "300"alt="adop_gato"/>
-                    <h3 class="Espacio"><li><a href="./gatos/index.html">Gatos</a></li></h3>
-                </div>
-                <div>
-                    <p> </p>
-                </div>
-        
-                <div class="TituloCentrado">
-                    <img src="./img_root/adop_perro.jpg" height = "250" width = "300"alt="adop_perro"/>
-                    <h3 class="Espacio"><li><a href="./perros/index.html">Perros</a></li></h3>
-                </div>
-                <footer>
-                    <div>
-                        <p>@Derechos reservados - Ayuda a un peludo</p>
-                        <p>Desarrollado por Hurub</p>
-                    </div>
-                </footer>
-        </nav>
-    </body>
 </html>
