@@ -1,0 +1,16 @@
+{% extends 'noticias/base.html' %}
+{% load static %}
+{% block cuerpo %}
+<div class="left-section darkback"></div>
+<div class="right-section primaryback">
+    <div class="container">
+        <p>{{error_form}}</p>
+        <form action="signin" method="POST">
+            {% csrf_token %} 
+            {{form.as_p}}
+            <button class="btn darkback text-white">Log In</button>
+            <a class="btn btn-secondary me-md-2" aria-current="page" href="signup">Registro</a>
+        </form>
+    </div>
+</div>
+{% endblock %}

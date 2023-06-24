@@ -1,0 +1,69 @@
+{% extends 'noticias/base.html' %}
+{% load static %}
+{% block cabeceras%}
+{% endblock %}
+{% block cuerpo %}
+<div class="container">
+  <!-- Formulario de contacto -->
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="mb-4">Formulario de nueva noticia</h2>
+        <form method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+        
+          <div class="mb-3">
+            <label for="titulo" class="form-label">Título</label>
+            <div class="input-group">
+              <input class="form-control" type="text" name="titulo" id="titulo"
+              placeholder="Ingrese el titulo de la noticia" required="True">
+            </div>
+          </div>
+        
+          <div class="mb-3">
+            <label for="cuerpo" class="form-label">Cuerpo</label>
+            <div class="input-group">
+              <textarea style="height: 1vh;" class="form-control" id="cuerpo"
+              required="True" rows="10" cols="40" name="cuerpo"></textarea>
+            </div>
+          </div>
+        
+          <div class="mb-3">
+            <label for="ubicacion" class="form-label">Ubicación</label>
+            <div class="input-group">
+              <div class="input-group">
+                <input class="form-control" type="text" name="ubicacion" id="ubicacion"
+                placeholder="Ingrese la ubicacion del suceso" required="True">
+              </div>
+            </div>
+          </div>
+        
+          <div class="mb-3">
+            <label for="imagen" class="form-label">Archivo</label>
+            <div class="input-group">
+              <input type="file" name="imagen" required="" id="imagen" class="form-control">
+            </div>
+          </div>
+        
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="destacada" name="destacada">
+            <label class="form-check-label" for="destacada">Noticia destacada</label>
+          </div>
+        
+          <div class="mb-3">
+            <label for="categoria" class="form-label">Categoría</label>
+            <select name="categoria" id="categoria" class="form-control">
+              {% for categoria in categorias %}
+                <option value="{{ categoria.categoria }}">{{ categoria.categoria }}</option>
+              {% endfor %}
+            </select>
+          </div>
+        
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+{% endblock %}

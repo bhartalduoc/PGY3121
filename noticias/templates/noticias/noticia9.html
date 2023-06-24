@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Caos News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Importamos los estilos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="../custom-styles.css">
+  <script src="../scripts/logindinamico.js"></script>
+  <script src="../scripts/indicador.js"></script>
+</head>
+
+<body>
+  <!-- Barra navegadora -->
+  <header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../categorias.html">Categorias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../periodistas.html">Periodistas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contacto.html">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="navbar-nav">
+            <li>
+              <p class="indicador-economico" id="UF"></p>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex">
+                <div class="input-group me-2">
+                  <input class="form-control" style="width: 326px;" type="search"
+                    placeholder="Buscar por Autor, Categoria o palabra clave"
+                    aria-label="Buscar por Autor, Categoria o palabra clave">
+                  <button class="btn btn-danger" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </form>
+            </li>
+            <li class="nav-item"></li>
+              <!-- Item de inicio de sesion -->
+              <div id="logindinamico"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Contenido principal -->
+    <div class="container mt-5" style="height: 80vh;">
+      <h1>Duelo en la música tropical: muere Cristián Rodríguez, vocalista de Garras de Amor</h1>
+      <p><i class="fas fa-tags"></i>Espectaculo</p>
+      <p>Autor: Bastian Hartal</p>
+      <p class="cuerpo-noticia">
+        El pasado 13 de mayo el artista sufrió un accidente cerebrovascular (ACV) cuando se trasladaba desde Mendoza a Chile. Tras el accidente 
+        fue trasladado de urgencia al Hospital San Juan de Dios de Los Andes, donde recibió maniobras de reanimación. Posteriormente fue trasladado 
+        al Hospital San Felipe en estado crítico.  Rodríguez sufrió un ACV isquémico bilateral el que lo tuvo en un principio “estable”, pero fue 
+        empeorando con el pasar de los días hasta provocar su muerte. Garras de Amor se fundó en Mendoza en 1998 gracias a los hermanos Diego, 
+        Juan y Cristián Rodríguez. En el 2000 lanzan su disco debut homónimo, el que tuvo una gran recepción en Chile como en Argentina con temas 
+        como No dejes de quererme, Báilalo y Apasionados. En nuestro país vendieron casi 20 copias.
+      </p>
+      <img src="../noticia9/noticia9_vocalista.jpg" class="d-block w-100" alt="Imagen 2">
+      <p class="cuerpo-noticia">
+        La noche de este viernes se informó el fallecimiento de Cristián Rodríguez, fundador y vocalista de la célebre banda argentina, Garras de Amor, 
+        la que alcanzó una gran popularidad en nuestro país a comienzos del 2000’s con su denominada “cumbia romántica”.
+        El pasado 13 de mayo el artista sufrió un accidente cerebrovascular (ACV) cuando se trasladaba desde Mendoza a Chile. Tras el accidente 
+        fue trasladado de urgencia al Hospital San Juan de Dios de Los Andes, donde recibió maniobras de reanimación. Posteriormente fue trasladado al 
+        Hospital San Felipe en estado crítico.
+      </p>
+      <p class="cuerpo-noticia">
+        Rodríguez sufrió un ACV isquémico bilateral el que lo tuvo en un principio “estable”, pero fue empeorando con el pasar de los días hasta provocar su muerte.
+        Garras de Amor se fundó en Mendoza en 1998 gracias a los hermanos Diego, Juan y Cristián Rodríguez. En el 2000 lanzan su disco debut homónimo, el que tuvo 
+        una gran recepción en Chile como en Argentina con temas como No dejes de quererme, Báilalo y Apasionados. En nuestro país vendieron casi 20 copias.
+      <p class="cuerpo-noticia">
+        En el 2003 realizan su primer concierto masivo en nuestro país en el estadio Víctor Jara iniciando una gran unión con Chile, al que volverían en cientos 
+        de ocasiones hasta cerrar el Festival de Viña 2012 junto a Ráfaga. Lamentablemente las malas noticias para los hermanos Rodríguez comenzaron en 
+        2019 cuando Juan (baterista de la banda) tuvo un accidente automovilístico en la carretera San Martín a la altura de El Monte falleciendo de forma instantánea. 
+        Tres meses más tardes se presentaron en el Festival del Huaso de Olmué y le rindieron homenaje al fallecido baterista. En 2004, el otro hermano fundador de la 
+        banda, Diego, también sufrió un accidente automovilístico que lo dejó en silla de ruedas tras una serie de lesiones en su columna. 
+        El fallecimiento de Cristián marca una nueva tristeza para un grupo que se encargó de traer alegría a los hogares.
+      </p>
+      <br>
+      
+      <div>
+        <footer class="bg-dark text-center text-lg-start">
+          <!-- Copyright -->
+          <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0);">
+            <p style="color: rgb(138, 138, 138);">© 2023 Copyright. Desarrollado por Hurub+.</p>
+          </div>
+        </footer>
+      </div>
+
+    </div>
+    <!-- Importamos los scripts de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

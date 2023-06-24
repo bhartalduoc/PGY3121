@@ -1,0 +1,53 @@
+{% extends 'noticias/base.html' %}
+{% load static %}
+{% block cuerpo %}
+<div class="container">
+  <!-- Carrusel de imágenes -->
+  <div class="container-fluid p-4">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        {% for noticia in noticias_destacadas %}
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+        {% endfor %}
+      </ol>
+      <div class="carousel-inner">
+        {% for noticia in noticias_destacadas %}
+          <div class="carousel-item {% if forloop.first %}active{% endif %}">
+            <a href="noticia?id={{ noticia.idNoticia }}">
+              <img src="{{ MEDIA_URL }}{{ noticia.imagen }}" class="d-block w-100" alt="Imagen">
+            </a>
+            <div class="carousel-caption">
+              <h4 class="fondo-texto">{{ noticia.noticia }}</h4>
+              <br>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </a>
+    </div>
+    <br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      {% for noticia in noticias_varias %}
+      <div class="col">
+        <div class="card h-100">
+          <img src="{{ MEDIA_URL }}{{ noticia.imagen }}" class="card-img-top" alt="80">
+          <div class="card-body">
+            <p class="card-text">{{ noticia.noticia }}
+            </p>
+            <u><a href="noticia?id={{ noticia.idNoticia }}">Leer mas... </a></u>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<br>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'noticias/base.html' %}
+{% load static %}
+{% block cuerpo %}
+<div class="container">
+  <!-- Imagen Principal -->
+  <div class="container-fluid p-5">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{{ MEDIA_URL }}{{ noticia.imagen }}" class="d-block w-100" alt="Imagen 1">
+          <div class="carousel-caption">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contenido principal -->
+  <div class="container mt-5" style="height: 80vh;">
+    <h1>{{ noticia.noticia }}</h1>
+    <p><i class="fas fa-tags"></i>{{ categoria.categoria }}</p>
+    <p>Autor: {{ usuario.first_name }} {{ usuario.last_name }}</p>
+    <p class="cuerpo-noticia">
+      {{ noticia.cuerpo }}
+    </p>
+  </div>
+</div>
+{% endblock %}

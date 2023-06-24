@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Caos News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Importamos los estilos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="../custom-styles.css">
+  <script src="../scripts/logindinamico.js"></script>
+  <script src="../scripts/indicador.js"></script>
+</head>
+
+<body>
+  <!-- Barra navegadora -->
+  <header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../categorias.html">Categorias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../periodistas.html">Periodistas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contacto.html">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="navbar-nav">
+            <li>
+              <p class="indicador-economico" id="UF"></p>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex">
+                <div class="input-group me-2">
+                  <input class="form-control" style="width: 326px;" type="search"
+                    placeholder="Buscar por Autor, Categoria o palabra clave"
+                    aria-label="Buscar por Autor, Categoria o palabra clave">
+                  <button class="btn btn-danger" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </form>
+            </li>
+            <li class="nav-item"></li>
+              <!-- Item de inicio de sesion -->
+              <div id="logindinamico"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Imagen Principal -->
+    <div class="container-fluid p-4">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./noticia5_dahmer.jpg" class="d-block w-100" alt="Imagen 1">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contenido principal -->
+    <div class="container mt-5" style="height: 80vh;">
+      <h1>Filipinas: Fanático de Jeffrey Dahmer mató a su sobrino de 4 años y lo ocultó en una lavadora</h1>
+      <p><i class="fas fa-tags"></i>Internacional</p>
+      <p>Autor: José Ubilla</p>
+      <p class="cuerpo-noticia">
+        Fue la propia madre del adolescente quien halló el cuerpo de la víctima e instó a su hijo a entregarse a la policía.
+      </p>
+      <p class="cuerpo-noticia">
+        La población filipina se encuentra conmovida tras el hallazgo del cuerpo de un niño de cuatro años en el interior de una lavadora, el que 
+        fue asesinado por su tío fanático de Jeffrey Dahmer. Desde el 26 de mayo que una familia de Las Piñas buscaba a Prince Gray Mondero (4), 
+        quien desapareció mientras jugaba con sus primos, mientras era cuidado por su tío de 15 años, Patrick Sucgang. A pesar de las múltiples preguntas, 
+        el joven aseguró desconocer el paradero del niño.
+      </p>
+      <img src="./dahmer.jpg" class="d-block w-100" alt="Imagen 2">
+      <p class="cuerpo-noticia">
+        El 29 de mayo, la madre de Sucgang sintió un olor desagradable proveniente de la pieza del adolescente, ubicada en el segundo piso de su casa. 
+        Dentro del cuarto había una lavadora en desuso, cubierta por una tela y con varios libros encima. En el interior del aparato estaban los restos de Prince. 
+        La mujer incitó a su hijo a que se entregara voluntariamente a la policía y se hiciera responsable por el crimen. La investigación policial reveló que 
+        en la habitación de Patrick había posters de Jeffrey Dahmer y símbolos nazis. También se confirmó que le gustaba ver series de asesinos seriales. Además, 
+        envió a un pariente fotos con los detalles del homicidio.
+      </p>
+      <p class="cuerpo-noticia">
+        Los resultados de la autopsia del niño revelaron que sufrió lesiones traumáticas contusas en la cabeza, las que posiblemente fueron causadas por un 
+        golpe que resultó en su muerte. El coronel de policía Jaime Santos, jefe de policía de Las Piñas, dijo que, “a través de las entrevistas realizadas 
+        por nuestros investigadores, descubrimos que a este sospechoso le gustaba ver 'Dahmer', una película extranjera que involucra asesinatos en serie y delitos sexuales. 
+        Parece que lo interiorizó.
+        De acuerdo con información de The Sun, el abuelo de la víctima aseguró que “debería ser acusado. Debe sufrir por sus crímenes. Lo admitió y publicó lo que hizo. 
+        Lo planeó y lo llevó a cabo. Así de desvergonzado es".
+      </p>
+      <p class="cuerpo-noticia">
+        En tanto, la madre de Sucgang instó a otros padres a monitorear lo que sus hijos buscan en internet. Posteriormente, el homicida escribió en sus redes 
+        sociales “hice algo de lo que me arrepiento profundamente y necesito hacer todo lo posible para compensarlo. Dejé que mis pensamientos intrusivos ganaran 
+        y tengo que pagar las consecuencias". "No puedo expresar con palabras el dolor y el duelo que siento por la familia de la víctima. Es importante para mí 
+        expresar mi más sentido pésame a la familia y hacerles saber que realmente lamento lo sucedido", agregó.        
+        Según The Philippine STAR, Patrick quedó en custodia de la oficina local de desarrollo y bienestar social, y será procesado cuando cumpla los 18 años.
+      </p>
+
+      <div>
+        <footer class="bg-dark text-center text-lg-start">
+          <!-- Copyright -->
+          <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0);">
+            <p style="color: rgb(138, 138, 138);">© 2023 Copyright. Desarrollado por Hurub+.</p>
+          </div>
+        </footer>
+      </div>
+
+    </div>
+    <!-- Importamos los scripts de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

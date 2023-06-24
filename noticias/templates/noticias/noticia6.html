@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Caos News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Importamos los estilos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="../custom-styles.css">
+  <script src="../scripts/logindinamico.js"></script>
+  <script src="../scripts/indicador.js"></script>
+</head>
+
+<body>
+  <!-- Barra navegadora -->
+  <header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../categorias.html">Categorias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../periodistas.html">Periodistas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contacto.html">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="navbar-nav">
+            <li>
+              <p class="indicador-economico" id="UF"></p>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex">
+                <div class="input-group me-2">
+                  <input class="form-control" style="width: 326px;" type="search"
+                    placeholder="Buscar por Autor, Categoria o palabra clave"
+                    aria-label="Buscar por Autor, Categoria o palabra clave">
+                  <button class="btn btn-danger" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </form>
+            </li>
+            <li class="nav-item"></li>
+              <!-- Item de inicio de sesion -->
+              <div id="logindinamico"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Imagen Principal -->
+    <div class="container-fluid p-4">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./noticia6_derrumbe.jpg" class="d-block w-100" alt="Imagen 1">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contenido principal -->
+    <div class="container mt-5" style="height: 80vh;">
+      <h1>12 personas murieron asfixiadas tras el colapso de una mina de oro en la Amazonía venezolana</h1>
+      <p><i class="fas fa-tags"></i>Internacional</p>
+      <p>Autor: José Ubilla</p>
+      <p class="cuerpo-noticia">
+        Las autoridades venezolanas informaron que los mineros quedaron atrapados en un derrumbe ocurrido en una mina del estado Bolívar.
+        Al menos 12 personas murieron asfixiadas debido al derrumbe de una mina en la Amazonía venezolana, al sureste del país.
+      </p>
+      <img src="./derrumbe.jpg" class="d-block w-100" alt="Imagen 2">
+      <p class="cuerpo-noticia">
+        El secretario de seguridad de la gobernación del estado Bolívar, el general Edgar Colina Reyes, informó que las autoridades encontraron los 
+        cuerpos en la mina Isidora, ubicada en el municipio El Callao. Los mineros "entraron en una mina que había estado cerrada mucho tiempo", 
+        dijo Colina según informó la agencia AFP.
+      </p>
+      <p class="cuerpo-noticia">
+        El vocero de la gobernación explicó que durante las labores de rescate se recuperaron cinco cuerpos el viernes y siete el sábado. 
+        Los mineros habrían fallecido el miércoles, luego de que la mina se inundara por las lluvias y el grupo quedara bajo tierra sin suministro de oxígeno.        
+        Agregó que hasta el momento las víctimas no han sido identificadas.
+      </p>
+      <p class="cuerpo-noticia">
+        En 2021, el derrumbe de un pozo en la misma mina de oro provocó la muerte de una persona, mientras que otras 34 fueron rescatadas. La minería de oro 
+        se concentra en el sur de Venezuela, especialmente en el estado Bolívar. Muchas de estas minas operan ilegalmente y los accidentes son comunes.
+      </p>
+
+      <div>
+        <footer class="bg-dark text-center text-lg-start">
+          <!-- Copyright -->
+          <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0);">
+            <p style="color: rgb(138, 138, 138);">© 2023 Copyright. Desarrollado por Hurub+.</p>
+          </div>
+        </footer>
+      </div>
+
+    </div>
+    <!-- Importamos los scripts de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

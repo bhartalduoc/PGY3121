@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Caos News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Importamos los estilos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="../custom-styles.css">
+  <script src="../scripts/logindinamico.js"></script>
+  <script src="../scripts/indicador.js"></script>
+</head>
+
+<body>
+  <!-- Barra navegadora -->
+  <header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../categorias.html">Categorias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../periodistas.html">Periodistas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contacto.html">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="navbar-nav">
+            <li>
+              <p class="indicador-economico" id="UF"></p>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex">
+                <div class="input-group me-2">
+                  <input class="form-control" style="width: 326px;" type="search"
+                    placeholder="Buscar por Autor, Categoria o palabra clave"
+                    aria-label="Buscar por Autor, Categoria o palabra clave">
+                  <button class="btn btn-danger" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </form>
+            </li>
+            <li class="nav-item"></li>
+              <!-- Item de inicio de sesion -->
+              <div id="logindinamico"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Imagen Principal -->
+    <div class="container-fluid p-4">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./noticia3_toha.jpg" class="d-block w-100" alt="Imagen 1">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contenido principal -->
+    <div class="container mt-5" style="height: 80vh;">
+      <h1>Tohá pide aclaración a la Suprema tras dichos de Vivanco por devolución de excedentes de isapres</h1>
+      <p><i class="fas fa-tags"></i>Politica</p>
+      <p>Autor: Bastian Hartal</p>
+      <p class="cuerpo-noticia">
+        La Ministra del Interior sostuvo que los dichos de la vocera de la Suprema, que solo recibirán devolución los afiliados que demandaron, 
+        no alteran el curso del proyecto que presentó La Moneda.
+      </p>
+      <p class="cuerpo-noticia">
+        La ministra del Interior y Seguridad Pública, Carolina Tohá, se refirió en Mesa Central de Canal 13 a la polémica aclaración dada por una de 
+        las juezas que dictó el fallo en contra de las isapres, sosteniendo que “no altera el curso del proyecto que presentó el Ejecutivo". Siete meses 
+        atrás la Corte Suprema dictó un fallo en contra de las isapres que las obliga a devolver más de 1.400 millones de dólares a sus afiliados por cobros excesivos. 
+      </p>
+      <img src="./toha.jpg" class="d-block w-100" alt="Imagen 2">
+      <p class="cuerpo-noticia">
+        En entrevista con La Tercera, la jueza Ángela Vivanco,  vocera de la Suprema y presidenta (S) de la Tercera Sala del máximo tribunal, aseguró sobre el fallo 
+        que “los excedentes que las isapres tienen que devolver son a quienes demandaron”. “Esto es una novedad. Lo que vamos a hacer a través de la superintendencia 
+        es pedir una aclaración respecto a los alcances que tienen estas declaraciones. El planteamiento de la presidenta subrogante se hizo en el contexto de una 
+        entrevista y hay que buscar que se aclare de manera formal a través de un recurso de aclaración”, afirmó la ministra Tohá.La autoridad agregó que 
+        “se han pedido aclaraciones al fallo en otros momentos como gobierno, pero respecto de otras materias, esto no parecía ser una materia en que hubiera 
+        dudas, y tampoco las isapres pidieron aclaración respecto a esto”. 
+      </p>
+      <p class="cuerpo-noticia">
+        En esta línea recalcó que “esto no altera el curso del proyecto que presentó el Ejecutivo, porque el proyecto del Ejecutivo no hace mención a montos, 
+        sino que a mecanismos que se ocuparán para pagar los montos que corresponden, cualesquiera estos sean”. “El proyecto de ley no se ve afectado ni se basa 
+        en un número específico (...) tenemos que apurarnos porque los tiempos son acotados y ha habido distintas opiniones sobre cómo enfrentar este tema”, añadió. 
+        Como Ejecutivo estamos dispuestos a conversar y buscar soluciones, pero sí a tener presente otros principios, y ese principio debiese ser que el 
+        mecanismo para que se pague lo que ordenó la Corte no se base en evitar que se pague o en hacer una especie de ‘perdonazo’”. 
+      </p>
+      <p class="cuerpo-noticia">
+        Respecto al mecanismo de los pagos, dijo que “es importante porque esto tiene que ver con la confiabilidad de todo el sistema, el que cuando la Suprema 
+        ordene que hay que pagar algo, se pague. Es relevante, y al Ejecutivo también le importa, que la modalidad que se encuentre para el pago no haga inviable 
+        pero se a las isapres, porque no queremos que las personas que están afiliadas queden descubiertas". "Otra cosa es la discusión del sistema de salud 
+        y las reformas que hagamos, pero que no sea sobre la base que haya una crisis en cadena producto de la aplicación del fallo. Por eso estamos buscando 
+        una modalidad en que se cumplan esas dos cosas", aclaró Tohá.
+      </p>
+      <p class="cuerpo-noticia">
+        Para finalizar el tema, dijo "no quiero anticipar evaluaciones, porque habría que ver qué significa. A lo mejor si significa estrictamente en lo 
+        que parece se traduciría en que las demás personas también recurran a los tribunales. Podría haber muchas versiones distintas del alcance que esto 
+        tiene, por eso el recurso de aclaración para que sea estricto, claro y formal, a que se refiriendo la ministra en el fallo en general y, en base a eso, trabajar”.
+      </p>
+      <p class="cuerpo-noticia">
+        Condonación del CAE<br>
+        Durante la segunda Cuenta Pública de Gabriel Boric, el mandatario reafirmó su compromiso en finalizar el Crédito con Aval del Estado (CAE), 
+        pero condicionó la iniciativa a la aprobación de la reforma tributaria. Posteriormente, el ministro de Hacienda, Mario Marcel, salió a explicar que 
+        “lo que el Presidente dijo es lo mismo que dijo en la cuenta pública anterior. El tema del CAE lo vamos a abordar una vez que esté aprobada la reforma 
+        tributaria. Eso no significa que se financie con la reforma tributaria”. En entrevista con Mesa Central, la ministra Tohá fue consultada sobre la condonación del 
+        CAE, asegurando que “si están relacionados porque el Ejecutivo no va a proponer una modalidad de resolver el CAE hasta no tener resuelto el tema mayor y grueso 
+        que es la Reforma Tributaria. En ese sentido sí están encadenados el uno del otro”. 
+      </p>
+        
+      <div>
+        <footer class="bg-dark text-center text-lg-start">
+          <!-- Copyright -->
+          <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0);">
+            <p style="color: rgb(138, 138, 138);">© 2023 Copyright. Desarrollado por Hurub+.</p>
+          </div>
+        </footer>
+      </div>
+
+    </div>
+    <!-- Importamos los scripts de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

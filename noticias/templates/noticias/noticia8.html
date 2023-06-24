@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Caos News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Importamos los estilos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="../custom-styles.css">
+  <script src="../scripts/logindinamico.js"></script>
+  <script src="../scripts/indicador.js"></script>
+</head>
+
+<body>
+  <!-- Barra navegadora -->
+  <header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../categorias.html">Categorias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../periodistas.html">Periodistas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contacto.html">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="navbar-nav">
+            <li>
+              <p class="indicador-economico" id="UF"></p>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex">
+                <div class="input-group me-2">
+                  <input class="form-control" style="width: 326px;" type="search"
+                    placeholder="Buscar por Autor, Categoria o palabra clave"
+                    aria-label="Buscar por Autor, Categoria o palabra clave">
+                  <button class="btn btn-danger" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </form>
+            </li>
+            <li class="nav-item"></li>
+              <!-- Item de inicio de sesion -->
+              <div id="logindinamico"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Contenido principal -->
+    <div class="container mt-5" style="height: 80vh;">
+      <h1>La lectura del ADN de 233 especies de primates ilumina qué es una persona y cómo surgen las enfermedades humanas</h1>
+      <p><i class="fas fa-tags"></i>Ciencia</p>
+      <p>Autor: Juan Urrutia</p>
+      <p class="cuerpo-noticia">
+        El torrente de información genética permitirá identificar más fácilmente las mutaciones patológicas, como las causantes del cáncer.
+      </p>
+      <img src="../noticia8/noticia8_primate.jpeg" class="d-block w-100" alt="Imagen 2">
+      <p class="cuerpo-noticia">
+        El último ancestro común de las personas y los chimpancés se paseó por el planeta hace unos siete millones de años. Puede parecer mucho, 
+        pero es aproximadamente la misma distancia que separa a los elefantes africanos y a los elefantes asiáticos, dos especies tan similares que la 
+        gente los suele llamar, simplemente, elefantes. El biólogo Tomàs Marquès Bonet trabaja para responder una de las grandes preguntas de la 
+        humanidad: qué nos hace humanos, qué pasó en esos siete millones de años para que las personas sean capaces de caminar por la Luna y el resto 
+        de los primates estén todavía en las ramas de los árboles. Este jueves se ha dado un paso de gigante. Un consorcio internacional capitaneado 
+        por Marquès Bonet ha leído el ADN de 233 especies de primates, la mitad de todas las conocidas. Esta monumental información genética sirve 
+        para precisar qué es un ser humano, pero también para iluminar el origen de multitud de enfermedades, como el cáncer.
+      </p>
+      <p class="cuerpo-noticia">
+        El genoma de una persona, su ADN, es un texto de más de 3.000 millones de letras químicas, con las instrucciones para que cada célula sepa lo que tiene que hacer. 
+        “Si secuenciamos el ADN de una persona enferma, encontraremos millares de mutaciones candidatas a estar vinculadas con esa enfermedad”, explica Marquès 
+        Bonet, del Instituto de Biología Evolutiva, en Barcelona. El investigador cuenta que, hace cinco años, la empresa estadounidense Illumina, 
+        líder mundial en tecnología de secuenciación del ADN, les propuso coordinar un macroproyecto para leer los genomas de cientos de especies de primates, 
+        con el objetivo de elaborar un catálogo genético que permita identificar cuáles son las variantes específicas de las enfermedades humanas. 
+        Sus resultados se publican este jueves, en un número especial de la revista Science. 
+      </p>
+      <p class="cuerpo-noticia">
+        “Si ves una mutación en un enfermo y también la encuentras en varias especies de primates, descártala, porque seguramente no es la causante 
+        de la enfermedad. Si, en cambio, encuentras una mutación que solo aparece en un tejido tumoral, y no se ha visto nunca en ningún otro primate, 
+        esa mutación debe hacer algo disruptivo en la célula y es una candidata perfecta para seguir tirando del hilo”, señala Marquès Bonet.
+        El consorcio ha analizado el ADN de más de 800 individuos de 233 especies, incluyendo las más cercanas a los humanos —chimpancés, gorilas y 
+        orangutanes— y algunas en peligro crítico de extinción, como el lémur saltador de Sahafary, del que apenas quedan 40 ejemplares en libertad en 
+        Madagascar. Los investigadores han utilizado estos datos para entrenar un algoritmo con el que identificar mutaciones asociadas a enfermedades. 
+        Esa nueva herramienta de inteligencia artificial ha revelado un 73% más de vínculos entre variantes genéticas y patologías, según un estudio 
+        realizado con el Biobanco de Reino Unido, un registro de datos biomédicos de casi medio millón de voluntarios.
+      </p>
+      <p class="cuerpo-noticia">
+        “Hemos puesto el algoritmo a trabajar con enfermedades complejas, como la diabetes y el cáncer, donde obviamente la causa no es una mutación en un gen, 
+        sino una combinación de muchas cosas”, expone Marquès Bonet. “Hay mutaciones comunes que contribuyen, como se había visto hasta ahora, pero, por primera vez, 
+        podemos decir que hay mutaciones raras, poco frecuentes, que tienen un impacto muy grande sobre estas enfermedades complejas. Y esto lo hemos 
+        conseguido con un algoritmo entrenado con los primates”, destaca el biólogo. Su instituto es un centro mixto del Consejo Superior de Investigaciones 
+        Científicas (CSIC) y la Universidad Pompeu Fabra.
+        Marquès Bonet explica que, cuando comenzaron el proyecto hace cinco años, se habían secuenciado los genomas de apenas un par de decenas de especies de 
+        primates. “Saltar de 20 a 233 es un incremento enorme, que nos permite filtrar mejor lo que es exclusivamente humano y lo que no. Básicamente, 
+        hemos reducido a la mitad las mutaciones candidatas a definir a nuestra especie”, afirma el investigador. Su equipo ha detectado 89 variantes en 80 
+        genes que son cruciales para explicar qué es un ser humano. Marquès Bonet cita como ejemplo el gen NOVA1, que actúa como director de orquesta en el 
+        desarrollo temprano del cerebro.
+      </p>
+            
+      <div>
+        <footer class="bg-dark text-center text-lg-start">
+          <!-- Copyright -->
+          <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0);">
+            <p style="color: rgb(138, 138, 138);">© 2023 Copyright. Desarrollado por Hurub+.</p>
+          </div>
+        </footer>
+      </div>
+
+    </div>
+    <!-- Importamos los scripts de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

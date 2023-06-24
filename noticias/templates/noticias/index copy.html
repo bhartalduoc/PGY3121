@@ -1,0 +1,131 @@
+{% extends 'noticias/base.html' %}
+{% load static %}
+{% block cuerpo %}
+<div class="container">
+  <!-- Carrusel de imágenes -->
+  <div class="container-fluid p-4">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        {% for noticia in noticias_destacadas %}
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+        {% endfor %}
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="noticia1">
+            <img src="{% static 'image/noticia1_boric.jpg' %}" class="d-block w-100" alt="Imagen 1">
+          </a>
+          <div class="carousel-caption">
+            <h4 class="fondo-texto">Boric responde a ministra de la Corte Suprema por isapres: “Es importante que los jueces hablen a través de los fallos y no entrevistas”</h4>
+            <br>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="noticia2">
+            <img src="{% static 'image/noticia2_colocolo.jpg' %}" class="d-block w-100" alt="Imagen 2">
+          </a>
+          <div class="carousel-caption">
+            <h4 class="fondo-texto">Boca Juniors vs Colo Colo: Cuándo, a qué hora y dónde ver por TV y online al Cacique en Copa Libertadores</h4>
+            <br>
+            <h5 class="fondo-texto">Colo Colo visitará a Boca Juniors en un partido fundamental para su clasificación a la siguiente ronda de Copa Libertadores 2023.</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="noticia3">
+            <img src="{% static 'image/noticia3_toha.jpg' %}" class="d-block w-100" alt="Imagen 3">
+          </a>
+          <div class="carousel-caption">
+            <h4 class="fondo-texto">Tohá pide aclaración a la Suprema tras dichos de Vivanco por devolución de excedentes de isapres</h4>
+            <br>
+            <h5 class="fondo-texto">La Ministra del Interior sostuvo que los dichos de la vocera de la Suprema, que solo recibirán devolución los afiliados que demandaron, 
+              no alteran el curso del proyecto que presentó La Moneda.</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="noticia4">
+            <img src="{% static 'image/noticia4_lagranja.jpg' %}" class="d-block w-100" alt="Imagen 4">
+          </a>
+          <div class="carousel-caption">
+            <h4 class="fondo-texto">Persecución policial termina en choque y con un detenido en La Granja</h4>
+            <br>
+            <h5 class="fondo-texto">Una persecución policial terminó con un choque e incautación de armas en la comuna de La Granja.</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="noticia5">
+            <img src="{% static 'image/noticia5_dahmer.jpg' %}" class="d-block w-100" alt="Imagen 5">
+          </a>
+          <div class="carousel-caption">
+            <h4 class="fondo-texto">Fanático de Jeffrey Dahmer mató a su sobrino de 4 años y lo ocultó en una lavadora</h4>
+            <br>
+            <h5 class="fondo-texto">Fue la propia madre del adolescente quien halló el cuerpo de la víctima e instó a su hijo a entregarse a la policía.</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="noticia6">
+            <img src="{% static 'image/noticia6_derrumbe.jpg' %}" class="d-block w-100" alt="Imagen 6">
+          </a>
+          <div class="carousel-caption">
+            <h4 class="fondo-texto">12 personas murieron asfixiadas tras el colapso de una mina de oro en la Amazonía venezolana</h4>
+            <br>
+            <h5 class="fondo-texto">Las autoridades venezolanas informaron que los mineros quedaron atrapados en un derrumbe ocurrido en una mina del estado Bolívar.
+              Al menos 12 personas murieron asfixiadas debido al derrumbe de una mina en la Amazonía venezolana, al sureste del país.</h5>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </a>
+    </div>
+    <br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="{% static 'image/noticia7_fauna.jpeg' %}" class="card-img-top" alt="80">
+          <div class="card-body">
+            <h5 class="card-title">Espectaculo</h5>
+            <p class="card-text">Festival Fauna Primavera 2023: revisa las fechas, artistas confirmados y venta de entradas
+            </p>
+            <u><a href="noticia7">Leer mas... </a></u>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Última actualización hace 2 minutos</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="{% static 'image/noticia8_primate.jpeg' %}" class="card-img-top" alt="80">
+          <div class="card-body">
+            <h5 class="card-title">Ciencia</h5>
+            <p class="card-text">La lectura del ADN de 233 especies de primates ilumina qué es una persona y cómo surgen las enfermedades humanas</p>
+            <u><a href="noticia8">Leer mas... </a></u>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Última actualización hace 4 minutos</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="{% static 'image/noticia9_vocalista.jpg' %}" class="card-img-top" alt="80">
+          <div class="card-body">
+            <h5 class="card-title">Espectaculo</h5>
+            <p class="card-text">Muere Cristián Rodríguez, vocalista de Garras de Amor.</p>
+            <u><a href="noticia9">Leer mas... </a></u>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Última actualización hace 7 minutos</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+{% endblock %}

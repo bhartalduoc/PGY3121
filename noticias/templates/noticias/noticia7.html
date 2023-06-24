@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Caos News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Importamos los estilos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="../custom-styles.css">
+  <script src="../scripts/logindinamico.js"></script>
+  <script src="../scripts/indicador.js"></script>
+</head>
+
+<body>
+  <!-- Barra navegadora -->
+  <header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../categorias.html">Categorias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../periodistas.html">Periodistas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contacto.html">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="navbar-nav">
+            <li>
+              <p class="indicador-economico" id="UF"></p>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex">
+                <div class="input-group me-2">
+                  <input class="form-control" style="width: 326px;" type="search"
+                    placeholder="Buscar por Autor, Categoria o palabra clave"
+                    aria-label="Buscar por Autor, Categoria o palabra clave">
+                  <button class="btn btn-danger" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </form>
+            </li>
+            <li class="nav-item"></li>
+              <!-- Item de inicio de sesion -->
+              <div id="logindinamico"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+      <!-- Modal de inicio de sesión -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Inicio de sesión</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            
+            <div class="modal-body">
+              <form>
+                <form action="#">
+                  <div class="mb-3">
+                  <label class="form-label" for="lang">Perfil</label>
+                  <select name="lenguajes" id="lang">
+                    <option value="Administrador">Administrador</option>
+                    <option value="Periodista">Periodista</option>
+                  </select>
+                </div>
+            </form>
+
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo electrónico</label>
+                  <input type="plain" class="form-control" id="email" required>
+                </div>
+                                
+                <div class="mb-3">
+                  <label for="password" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="password" required>
+                </div>
+              </form>
+            </div>
+            
+            <div class="modal-footer">
+              <a href="admin.html" class="btn btn-dark" role="button">Entrar</a>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!-- Contenido principal -->
+    <div class="container mt-5" style="height: 80vh;">
+      <h1>Festival Fauna Primavera 2023: revisa las fechas, artistas confirmados y venta de entradas</h1>
+      <p><i class="fas fa-tags"></i>Espectaculo</p>
+      <p>Autor: José Ubilla</p>
+      <p class="cuerpo-noticia">
+        Conoce los detalles del evento que realizará su décima versión en el país. El festival Fauna Primavera se realizará en los próximos meses en Chile. 
+        Un evento masivo de música, que se caracteriza por reunir estilos como la electrónica, folk, indie, experimental, entre otros.
+      </p>
+      <img src="./noticia7_fauna.jpeg" class="d-block w-100" alt="Imagen 2">
+      <p class="cuerpo-noticia">
+        De acuerdo con la descripción oficial, Lo que salga es un show de stand-up comedy que germinó en plena pandemia, con teatros vacíos y encierro. 
+        En 2022 se convirtió en éxito de taquilla, agotando todas las entradas disponibles y recorriendo Chile en más de una ocasión.
+        Caroe promete presentar su material más íntimo, con una particular narrativa que va desmenuzando sus miedos como padre, el absurdo de nuestras 
+        contradicciones, la precariedad de la salud mental y la experiencia asfixiante de tanto malestar en una era de abundancia.En su décima versión, 
+        creada por Fauna Prod, será producida en conjunto con Lotus, quienes estarán a cargo de los dos días de conciertos, donde se presentarán bandas 
+        nacionales e internacionales.
+      </p>
+      <p class="cuerpo-noticia">
+      ¿Cuándo es y dónde será el Fauna Primavera Chile 2023?<br>
+      Desde la productora anunciaron que el festival Fauna Primavera regresa el 24 y 25 de noviembre de 2023, una cita para disfrutar de la música en directo y 
+      de diferentes estilos. Serán dos jornadas de recitales y actuaciones que ejecutarán diferentes bandas y que, según Lotus, ofrecerán conciertos 
+      “de primer nivel a miles de asistentes y protagonizando una de las paradas imprescindibles de cada año. Ese es el compromiso de Fauna Primavera con la 
+      música y el público, que cada edición sea una experiencia musical vital, inigualable y espectacular. Un festival único”. Esta nueva edición se realizará 
+      en el Parque Ciudad Empresarial, recinto que está ubicado en la comuna de Huechuraba y que será utilizado por primera vez para este festival.
+      </p>
+      <p class="cuerpo-noticia">
+        ¿Qué artistas se presentarán en el Fauna Primavera Chile 2023?<br>
+        Lotus, la productora a cargo del evento, confirmó a los dos artistas principales que se encargarán de encabezar el festival.        
+        De esta manera, el próximo Fauna Primavera contará con el grupo de rock británico Blur, una de las bandas del vocalista Damon Albarn, quien es el también
+        fundador de Gorillaz.        
+        Además, la obra banda encargada de encabezar el evento es Pulp, una agrupación británica que regresó a los escenarios el pasado 26 de mayo, siendo esa 
+        su primera presentación en 11 años.        
+        Sin embargo, la productora informó que pronto anunciarán a los demás artistas que formarán parte del cartel de esta nueva edición.
+      </p>
+      <p class="cuerpo-noticia">
+        ¿Cuándo comienza la venta de entradas?<br>
+        La preventa de entradas para el Fauna Primavera se realizará el próximo lunes 5 de junio a las 12:00 horas por medio del sistema LiveTickets y 
+        será exclusiva para los clientes de Banco de Chile, quienes podrán comprar un máximo de seis tickets.        
+        Por otro lado, la venta general de boletos se realizará el miércoles 7 de junio a las 12:00 horas por LiveTickets.        
+        No obstante, se debe mencionar que, en ambas ventas, solo estará disponible la opción de comprar pases por los dos días del evento, ya que el ticket 
+        diario será vendido una vez que el cartel completo de artistas sea revelado.
+      </p>
+      
+      <div>
+        <footer class="bg-dark text-center text-lg-start">
+          <!-- Copyright -->
+          <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0);">
+            <p style="color: rgb(138, 138, 138);">© 2023 Copyright. Desarrollado por Hurub+.</p>
+          </div>
+        </footer>
+      </div>
+
+    </div>
+    <!-- Importamos los scripts de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
