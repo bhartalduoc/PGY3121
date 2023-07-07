@@ -1,11 +1,42 @@
 {% extends 'noticias/base.html' %}
 {% block cuerpo %}
-<div class="container">
-    <p>{{error_form}}</p>
-    <form action="signup" method="POST">
-        {% csrf_token %} 
-        {{form.as_p}}
-        <button class="btn btn-primary">Signup</button>
-    </form>
+<div class="left-section darkback"></div>
+<div class="right-section primaryback d-flex align-items-center justify-content-center">
+  <div class="container mb-3">
+    <div class="row justify-content-center">
+      <div class="col-md-5 small-form">
+        <p>{{error_form}}</p>
+        <form method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="username" class="form-label">Usuario</label>
+            <div class="input-group">
+              <input class="form-control" type="text" name="username" id="username"
+                placeholder="Ingrese su Correo electronico" required="True">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="password1" class="form-label">Contraseña</label>
+            <div class="input-group">
+              <input class="form-control" type="password" name="password1" id="password1"
+                placeholder="Ingrese su contraseña" required="True">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="password2" class="form-label">Repita su contraseña</label>
+            <div class="input-group">
+              <input class="form-control" type="password" name="password2" id="password2"
+                placeholder="Repita su contraseña" required="True">
+            </div>
+          </div>
+
+          <button class="btn darkback text-white">Signup</button>
+          <a class="btn btn-secondary me-md-2" aria-current="page" href="signin">Log In</a>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}

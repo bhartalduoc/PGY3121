@@ -1,0 +1,43 @@
+{% extends 'noticias/base.html' %}
+{% load static %}
+{% block cuerpo %}
+<div class="left-section darkback"></div>
+<div class="right-section primaryback d-flex align-items-center justify-content-center">
+  <div class="container mb-3">
+    <div class="row justify-content-center">
+      <div class="col-md-5 small-form">
+        <p>{{error_form}}</p>
+        <form method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+
+          <div class="mb-3">
+            <label for="contrasena_actual" class="form-label">Contraseña Actual</label>
+            <div class="input-group">
+              <input class="form-control" type="password" name="contrasena_actual" id="contrasena_actual"
+                placeholder="Ingrese su contraseña" required="True">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="nueva_contrasena" class="form-label">Nueva Contraseña</label>
+            <div class="input-group">
+              <input class="form-control" type="password" name="nueva_contrasena" id="nueva_contrasena"
+                placeholder="Ingrese nueva contraseña" required="True">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="confirmar_contrasena" class="form-label">Repita su contraseña</label>
+            <div class="input-group">
+              <input class="form-control" type="password" name="confirmar_contrasena" id="confirmar_contrasena"
+                placeholder="Repita nueva contraseña" required="True">
+            </div>
+          </div>
+
+          <button class="btn darkback text-white">Cambiar Contraseña</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

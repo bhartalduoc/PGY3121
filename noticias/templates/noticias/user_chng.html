@@ -1,0 +1,43 @@
+{% extends 'noticias/base.html' %}
+{% load static %}
+{% block cuerpo %}
+<div class="left-section darkback"></div>
+<div class="right-section primaryback d-flex align-items-center justify-content-center">
+  <div class="container mb-3">
+    <div class="row justify-content-center">
+      <div class="col-md-5 small-form">
+        <p>{{error_form}}</p>
+        <form method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+
+          <div class="mb-3">
+            <label for="first_name" class="form-label">Nombre</label>
+            <div class="input-group">
+              <input class="form-control" type="text" name="first_name" id="first_name"
+                placeholder="Ingrese el nombre del usuario" required="True" value="{{usuario.first_name}}">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="last_name" class="form-label">Apellido</label>
+            <div class="input-group">
+              <input class="form-control" type="text" name="last_name" id="last_name"
+                placeholder="Ingrese el appelido del usuario" required="True" value="{{usuario.last_name}}">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="grupo" class="form-label">Rol</label>
+            <select name="grupo" id="grupo" class="form-control">
+                <option value="Periodista">Periodista</option>
+                <option value="Administradores">Administradores</option>
+            </select>
+          </div>
+
+          <button class="btn darkback text-white">Cambiar Usuario</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

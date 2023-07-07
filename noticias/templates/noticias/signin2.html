@@ -5,7 +5,7 @@
 <div class="right-section primaryback d-flex align-items-center justify-content-center">
   <div class="container mb-3">
     <div class="row justify-content-center">
-      <div class="col-md-5 small-form">
+      <div class="col-md-5">
         <p>{{error_form}}</p>
         <form method="POST" enctype="multipart/form-data">
           {% csrf_token %}
@@ -13,7 +13,7 @@
             <label for="username" class="form-label">Usuario</label>
             <div class="input-group">
               <input class="form-control" type="text" name="username" id="username"
-                placeholder="Ingrese su Correo electronico" required="True">
+                placeholder="Ingrese su Correo Usuario" required="True">
             </div>
           </div>
 
@@ -21,12 +21,12 @@
             <label for="password" class="form-label">Contraseña</label>
             <div class="input-group">
               <input class="form-control" type="password" name="password" id="password"
-                placeholder="Ingrese su contraseña" required="True">
+                placeholder="Ingrese su Contraseña" required="True">
             </div>
           </div>
 
           <button class="btn darkback text-white">Log In</button>
-          <a class="btn btn-secondary me-md-2" aria-current="page" href="signup">Signup</a>
+          <a class="btn btn-secondary me-md-2" aria-current="page" href="signup">Registro</a>
         </form>
       </div>
     </div>

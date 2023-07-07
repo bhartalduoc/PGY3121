@@ -1,0 +1,42 @@
+{% extends 'noticias/base.html' %}
+{% load static %}
+{% block cuerpo %}
+<div class="container">
+  <!-- Contenido principal -->
+  <div class="container mt-5" style="height: 80vh;">
+    <h1>Administracion de noticias</h1>
+    <br>
+    <div class="container">
+      <table class="table";>
+        <thead>
+          <tr>
+            <th scope="col">idUsuario</th>
+            <th scope="col">Usuario</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Rol</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="resultado-tabla">
+        {% for usuario in usuarios %}
+        {% if usuario.id != 1 %}
+        <tr>
+          <td>{{ usuario.id }}</td>
+          <td>{{ usuario.username }}</td>
+          <td>{{ usuario.first_name }}</td>
+          <td>{{ usuario.last_name }}</td>
+          <td>{{ usuario.groups.all.0.name }}
+          <td><a href="user_chng?id={{ usuario.id }}">Modificar</a></td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+{% endblock %}

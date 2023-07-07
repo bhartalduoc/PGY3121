@@ -1,0 +1,81 @@
+{% extends 'noticias/base.html' %}
+{% load static %}
+{% block cuerpo %}
+<div class="container">
+  <!-- Contenido principal -->
+  <div class="container mt-5">
+    <h1>Administracion de noticias</h1>
+    <br>
+    <div class="container">
+      <table class="table table-vertical";>
+        <tbody id="resultado-tabla">
+          <tr>
+            <th scope="row">idNoticia</th>
+            <td>{{ noticia.idNoticia }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Estado actual</th>
+            <td>{{ noticia.estado }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Fecha carga</th>
+            <td>{{ noticia.fecha }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Titulo</th>
+            <td>{{ noticia.noticia }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Destacada</th>
+            <td>{% if noticia.destacada %}Si{% else %}No{% endif %}</td>
+          </tr>
+          <tr>
+            <th scope="row">Autor</th>
+            <td>{{ noticia.idUsuario.first_name }} {{ noticia.idUsuario.last_name }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Categoria</th>
+            <td>{{ noticia.categoria.categoria }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Ubicacion</th>
+            <td>{{ noticia.ubicacion }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Link</th>
+            <td><a href="noticia?id={{ noticia.idNoticia }}">Ver noticia</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+        
+          <div class="mb-3">
+            <label for="comentario" class="form-label">Comentario</label>
+            <div class="input-group">
+              <textarea style="height: 1vh;" class="form-control" id="comentario"
+              required="True" rows="10" cols="40" name="comentario"></textarea>
+            </div>
+          </div>
+        
+          <div class="mb-3">
+            <label for="estado" class="form-label">Estado</label>
+            <select name="estado" id="estado" class="form-control">
+              {% for estado in estados %}
+                <option value="{{ estado.estado }}">{{ estado.estado }}</option>
+              {% endfor %}
+            </select>
+          </div>
+        
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

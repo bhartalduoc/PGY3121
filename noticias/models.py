@@ -26,7 +26,7 @@ class Noticia(models.Model):
     imagen = models.CharField(max_length=255)
     comentario = models.TextField(default="")
     idUsuario = models.ForeignKey(User,on_delete=models.CASCADE,null=True)
-    estado = models.ForeignKey('Estado', on_delete=models.CASCADE,default=3)
+    estado = models.ForeignKey('Estado', on_delete=models.CASCADE,default=1)
     categoria = models.ForeignKey('Categoria', on_delete=models.CASCADE)
     fecha = models.DateField(default=date.today)
     ubicacion = models.CharField(max_length=255, null=True)

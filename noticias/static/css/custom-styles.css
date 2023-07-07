@@ -5,6 +5,12 @@
     color: #1b1b1b;
 }
 
+.small-form {
+    background-color: #fff;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+}
+
 .darkback {
     background-color: #212529;
 }
@@ -27,6 +33,13 @@
 
 body {
     min-height:100vh;
+}
+
+.titulo-admin {
+  max-width: 300px; /* Establece el ancho máximo deseado para la columna */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .cuerpo-noticia {

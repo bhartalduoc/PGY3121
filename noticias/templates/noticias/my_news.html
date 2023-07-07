@@ -1,0 +1,50 @@
+{% extends 'noticias/base.html' %}
+{% load static %}
+{% block cuerpo %}
+<div class="container">
+  <!-- Contenido principal -->
+  <div class="container mt-5" style="height: 80vh;">
+    <h1>Administracion de noticias</h1>
+    <br>
+    <div class="container">
+      <table class="table";>
+        <thead>
+          <tr>
+            <th scope="col">idNoticia</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Fecha carga</th>
+            <th scope="col">Titulo</th>
+            <th scope="col">Destacada</th>
+            <th scope="col">Autor</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Ubicacion</th>
+            <th scope="col">Link</th>
+          </tr>
+        </thead>
+        <tbody id="resultado-tabla">
+        {% for noticia in noticias %}
+        <tr>
+          <td>{{ noticia.idNoticia }}</td>
+          <td>{{ noticia.estado.estado }}</td>
+          <td>{{ noticia.fecha }}</td>
+          <td class="titulo-admin">{{ noticia.noticia }}</td>
+          {% if noticia.destacada %}
+          <td>Si</td>
+          {% else %}
+          <td>No</td>
+          {% endif %}
+          <td>{{ noticia.idUsuario.first_name }} {{ noticia.idUsuario.last_name }}</td>
+          <td>{{ noticia.categoria.categoria }}</td>
+          <td>{{ noticia.ubicacion }}</td>
+          <td><a href="noticia?id={{ noticia.idNoticia }}">Ver noticia</a></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+{% endblock %}
